@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap');
+
+@import "variables-english-light.css";
+
+
+
+
+.card {
+  background-color: var(--cardBgColor);
+  border-color: var(--cardBorderColor);
+  border-radius: var(--cardBorderRadius);
+  border-width: var(--cardBorderWidth);
+  overflow: hidden;
+  box-shadow: var(--cardShadowX) var(--cardShadowY) var(--cardShadowBlur) var(--cardShadowColor);
+  direction: var(--cardDirection);
+}
+
+.card-img-top {
+  background-image: var(--cardImageName);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: var(--cardImageHeight);
+}
+
+
+.card-body {
+  padding: var(--cardBodyPaddingY) var(--cardBodyPaddingX);
+}
+
+.card-text {
+  color: var(--cardDescriptionFontColor);
+  font-size: var(--cardDescriptionFontSize);
+  font-weight: var(--cardDescriptionFontWeight);
+  line-height: var(--cardDescriptionFontLineHeight);
+  margin-bottom: var(--cardDescriptionMarginBottom);
+  font-family: var(--cardDescriptionFontFamily);
+}
+
+.card-text::before {
+  content: var(--cardDescriptionContent);
+}
+
+
+
+.card-title {
+  color: var(--cardTitleFontColor);
+  font-size: var(--cardTitleFontSize);
+  font-weight: var(--cardTitleFontWeight);
+  line-height: var(--cardTitleFontLineheight);
+  margin-bottom: var(--cardTitleMarginBottom);
+  font-family: var(--cardTitleFontFamily);
+}
+
+.card-title::before {
+  content: var(--cardTitleContent);
+}
+
+
+.btn {
+  padding: var(--buttonPaddingY) var(--buttonPaddingX);
+  border-radius: var(--buttonBorderRadius);
+  font-family: var(--buttonFontFamily);
+  font-size: var(--buttonFontSize);
+  line-height: var(--buttonFontLineheight);
+  font-weight: var(--buttonFontWeight);
+  border: none;
+}
+
+.card-button::before {
+  content: var(--cardButtonContent);
+}
+
+.btn-primary {
+  background-color: var(--buttonPrimaryBgColor);
+  color: var(--buttonPrimaryFontColor);
+}
+
+.btn-secondary {
+  background-color: var(--buttonSecondaryBgColor);
+  color: var(--buttonSecondaryFontColor);
+}
+
+.btn-group {
+  border: 0px solid grey;
+  padding: 4px;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 1px 3px 0px #e1e1e1;
+  gap: 4px;
+}
+
+.btn-group .btn {
+  padding: 6px 10px;
+}
+
+.btn-group>.btn-group:not(:last-child)>.btn,
+.btn-group>.btn.dropdown-toggle-split:first-child,
+.btn-group>.btn:not(:last-child):not(.dropdown-toggle),
+
+.btn-group>.btn-group:not(:first-child)>.btn,
+.btn-group>.btn:nth-child(n+3),
+.btn-group>:not(.btn-check)+.btn {
+  border-radius: 4px;
+}
