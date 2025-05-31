@@ -16,6 +16,7 @@
   overflow: hidden;
   box-shadow: var(--cardShadowX) var(--cardShadowY) var(--cardShadowBlur) var(--cardShadowColor);
   direction: var(--cardDirection);
+  width: var(--cardWidth);
 }
 
 .card-img-top {
@@ -66,7 +67,7 @@
   font-size: var(--buttonFontSize);
   line-height: var(--buttonFontLineheight);
   font-weight: var(--buttonFontWeight);
-  border: none;
+  border-width: var(--buttonBorderWidth);
 }
 
 .card-button::before {
@@ -76,11 +77,13 @@
 .btn-primary {
   background-color: var(--buttonPrimaryBgColor);
   color: var(--buttonPrimaryFontColor);
+  border-color: var(--buttonPrimaryBorderColor);
 }
 
 .btn-secondary {
   background-color: var(--buttonSecondaryBgColor);
   color: var(--buttonSecondaryFontColor);
+  border-color: var(--buttonSecondaryBorderColor);
 }
 
 .btn-group {

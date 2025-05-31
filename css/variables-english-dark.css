@@ -38,6 +38,7 @@
   --dimensions20: 20;
   --dimensions32: 32;
   --dimensions192: 192;
+  --dimensions: 250;
   --fontsFamilyInter: Inter;
   --fontsFamilyPoppins: Poppins;
   --fontsFamilyIbmPlexSansArabic: IBM Plex Sans Arabic;
@@ -106,6 +107,7 @@
   --fontWeightSemiBold: 600;
   --fontWeightBold: 700;
   --sizingLg: 192;
+  --sizingXl: 250;
   --bottom: 8px;
   --buttonBorderWidth: 2px;
   --buttonBorderRadius: 8px;
@@ -121,6 +123,7 @@
   --buttonSecondaryBgColor: #ffffff;
   --buttonSecondaryBorderColor: #0966cc;
   --buttonSecondaryFontColor: #4f954f;
+  --cardWidth: 250px;
   --cardShadowX: 0px;
   --cardShadowY: 8px;
   --cardShadowBlur: 20px;
